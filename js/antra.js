@@ -13,7 +13,7 @@ function isOlimpyc(m) {
             return `Tai ${yearsCounter} olimpynės žaidynės.`;
         }
     } else if (metai >= 1896 && metai <= 2024 && metai % 4 > 0) {
-        return `Jūsų nurodyti meta buvo ne olimpiniai.`;
+        return `Jūsų nurodyti metai buvo ne olimpiniai.`;
     } else if (metai < 1896) {
         return `Pirmosios olimpinės žaidynės įvyko tik 1896 metais. Taigi Jūsų nurodytais metais olimpynės žaidynės dar neegzistavo.`;
     } else if (metai >= 2024 && metai % 4 === 0) {
