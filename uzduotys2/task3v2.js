@@ -5,13 +5,9 @@ let rows = fs.readFileSync('data3.txt')
     .map(r => r.split(' ')
         .map(i => parseInt(i, 10)));
 
-console.log(rows);
-
 console.log(`----pirminis masyvas----`);
 
-for (let i = 0; i < rows.length; i++) {
-    console.log(rows[i].toString().replaceAll(',', ' '));
-}
+rows.forEach(x => console.log(x.join(' ')));
 
 console.log(`----pasuktas masyvas---`);
 
@@ -24,6 +20,4 @@ rows.forEach((row, i) => {
     });
 });
 
-for (let i = 0; i < rotateArr.length; i++) {
-    console.log(rotateArr[i].toString().replaceAll(',', ' '));
-}
+rotateArr.forEach(x => console.log(x.join(' ')));

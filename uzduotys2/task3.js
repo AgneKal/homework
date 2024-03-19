@@ -9,9 +9,7 @@ data.forEach((d) => {
     arr.push(d.split(' ').map(Number));
 })
 
-for (let i = 0; i < arr.length; i++) {
-    console.log(arr[i].toString().replaceAll(',', ' '));
-}
+arr.forEach(x => console.log(x.join(' ')));
 
 console.log(`----pasuktas masyvas---`);
 
@@ -24,6 +22,4 @@ arr.forEach(subArr => {
     });
 });
 
-for (let i = 0; i < rotateArr.length; i++) {
-    console.log(rotateArr[i].toString().replaceAll(',', ' '));
-}
+rotateArr.forEach(x => console.log(x.join(' ')));
