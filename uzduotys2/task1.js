@@ -13,6 +13,3 @@ const minAndMaxTemp = (data) => {
     return `Aukščiausia temperatūra šį mėnesį buvo ${data.indexOf(max) + 1} dieną, ${max}°C, žemiausia temperatūra šį mėnesį buvo ${data.indexOf(min) + 1} dieną, ${min}°C.`;
 }
 console.log(minAndMaxTemp(data));
-
-const arr = [0, 1, 4, 6, 2, 1];
-console.log(arr.indexOfAll());
