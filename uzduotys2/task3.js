@@ -15,10 +15,11 @@ for (let i = 0; i < arr.length; i++) {
 
 console.log(`----pasuktas masyvas---`);
 
-const rotateArr = [[], [], [], []];
+const rotateArr = [];
 
 arr.forEach(subArr => {
     subArr.forEach((x, i) => {
+        if (!rotateArr[i]) rotateArr[i] = [];
         rotateArr[i].push(x);
     });
 });
