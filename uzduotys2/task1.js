@@ -1,8 +1,6 @@
 const fs = require('fs');
 let data = fs.readFileSync('data1.txt').toString().split(' ').map(Number);
 
-console.log(data);
-
 const minAndMaxTemp = (data) => {
     let max = -Infinity;
     let min = Infinity;
