@@ -1,0 +1,62 @@
+[
+    {
+        "pavadinimas": "Kavos puodelis",
+        "kaina": 5.99,
+        "aprasymas": "Baltas keraminis kavos puodelis su mėlynais taškeliais",
+        "kiekis_sandelyje": [20, 30, 25, 28]
+    },
+    {
+        "pavadinimas": "Dviratis",
+        "kaina": 299.99,
+        "aprasymas": "Plius dydis, tinka tiek vaikams, tiek suaugusiems",
+        "kiekis_sandelyje": [10, 15, 12, 18]
+    },
+    {
+        "pavadinimas": "Televizorius",
+        "kaina": 499.99,
+        "aprasymas": "32 colių HD televizorius su įmontuotu DVD grotuvu",
+        "kiekis_sandelyje": [5, 8, 7]
+    },
+    {
+        "pavadinimas": "Piestukas",
+        "kaina": 1.49,
+        "aprasymas": "Juodas rašiklis, tinkantis tiek piešimui, tiek rašymui",
+        "kiekis_sandelyje": [50, 55, 48]
+    },
+    {
+        "pavadinimas": "Sportinis batutas",
+        "kaina": 149.99,
+        "aprasymas": "Aukštos kokybės sportinis batutas su tinkleliu",
+        "kiekis_sandelyje": [8, 10, 12]
+    },
+    {
+        "pavadinimas": "Knyga 'Programavimo pradžiamokslis'",
+        "kaina": 19.99,
+        "aprasymas": "Naujausia programavimo knyga pradedantiesiems su pavyzdžiais",
+        "kiekis_sandelyje": [15, 20, 18, 22]
+    },
+    {
+        "pavadinimas": "Ausinės",
+        "kaina": 29.99,
+        "aprasymas": "Baltos ausinės su trikolo spalvomis",
+        "kiekis_sandelyje": [30, 35, 28]
+    },
+    {
+        "pavadinimas": "Rankinė",
+        "kaina": 39.99,
+        "aprasymas": "Madinga moteriška rankinė su raštu",
+        "kiekis_sandelyje": [12, 15, 10]
+    },
+    {
+        "pavadinimas": "Virtuvinis peilis",
+        "kaina": 9.99,
+        "aprasymas": "Aukštos kokybės nerūdijantis plienas",
+        "kiekis_sandelyje": [25, 30, 27, 32]
+    },
+    {
+        "pavadinimas": "Šildymo kilimėlis",
+        "kaina": 49.99,
+        "aprasymas": "Minkštas šildymo kilimėlis su įmontuotu termostatu",
+        "kiekis_sandelyje": [5, 7, 9]
+    }
+]
