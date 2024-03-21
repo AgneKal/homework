@@ -10,9 +10,9 @@ async function changeCurrency(currency, sum) {
     const allCurr = Object.keys(currencies).join(', ');
 
     if (changer.rates[currency]) {
-        return console.log(`${currency} kursas: ${changer.rates[currency] / sum}\n${sum} EUR => ${changer.rates[currency]} ${currency}`);
+        console.log(`${currency} kursas: ${changer.rates[currency] / sum}\n${sum} EUR => ${changer.rates[currency]} ${currency}`);
     } else {
-        return console.log(`Valiuta ${currency} neegzistuoja.\n\nGalite rinktis vieną iš šių valiutų: ${allCurr}.`);
+        console.log(`Valiuta ${currency} neegzistuoja.\n\nGalite rinktis vieną iš šių valiutų: ${allCurr}.`);
     }
 }
 
