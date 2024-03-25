@@ -1,5 +1,5 @@
 const fs = require('fs');
-let str = fs.readFileSync('data.json').toString();
+let str = fs.readFileSync('data_parduotuve.json').toString();
 
 const sandelys = JSON.parse(str);
 
