@@ -92,25 +92,7 @@ class Trupmena {
     }
 
     pridetiTrupmena(x) {
-        const senosTrupmenosSkaitiklis = this.sveikojiDalis * this.daliklis + this.skaitiklis;
-        const paduotosTrupmenosSkaitiklis = x.sveikojiDalis * x.daliklis + x.skaitiklis;
-        const bendrasSkaitiklis = senosTrupmenosSkaitiklis * x.daliklis + paduotosTrupmenosSkaitiklis * this.daliklis;
-        const bendrasVardiklis = this.daliklis * x.daliklis;
-        if (bendrasSkaitiklis > bendrasVardiklis && bendrasSkaitiklis % bendrasVardiklis !== 0) {
-            this.sveikojiDalis = Math.floor(bendrasSkaitiklis / bendrasVardiklis);
-            this.daliklis = bendrasVardiklis;
-            this.skaitiklis = bendrasSkaitiklis % bendrasVardiklis;
-        } else if (bendrasSkaitiklis % bendrasVardiklis === 0) {
-            this.sveikojiDalis = this.sveikojiDalis + x.sveikojiDalis + 1;
-            this.daliklis = 0;
-            this.skaitiklis = 0;
-        } else {
-            this.sveikojiDalis = 0;
-            this.daliklis = bendrasVardiklis;
-            this.skaitiklis = bendrasSkaitiklis;
-        }
-        this.#prastinti();
-        return `${this.sveikojiDalis === 0 ? '' : this.sveikojiDalis} ${this.skaitiklis === 0 ? '' : this.skaitiklis} ${this.skaitiklis === 0 && this.daliklis === 0 ? '' : '/'} ${this.daliklis === 0 ? '' : this.daliklis}`;
+        return this.prideti(x.sveikojiDalis, x.skaitiklis, x.daliklis);
     }
 
     toDouble() {
