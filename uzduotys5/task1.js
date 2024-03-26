@@ -26,22 +26,25 @@ class Trupmena {
 
     set sveikojiDalis(sveikojiDalis) {
         this.#sveikojiDalis = sveikojiDalis;
-    }
-
-    set skaitiklis(skaitiklis) {
-        this.#skaitiklis = skaitiklis;
-    }
-
-    set daliklis(daliklis) {
-        this.#daliklis = daliklis;
+        this.#prastinti;
     }
 
     get sveikojiDalis() {
         return this.#sveikojiDalis
     }
 
+    set skaitiklis(skaitiklis) {
+        this.#skaitiklis = skaitiklis;
+        this.#prastinti;
+    }
+
     get skaitiklis() {
         return this.#skaitiklis
+    }
+
+    set daliklis(daliklis) {
+        this.#daliklis = daliklis;
+        this.#prastinti;
     }
 
     get daliklis() {
@@ -57,11 +60,12 @@ class Trupmena {
     }
 
     #prastinti() {
-        for (let i = this.daliklis; i > 0; i--) {
+        for (let i = this.skaitiklis; i > 0; i--) {
             if (this.daliklis % i === 0 && this.skaitiklis % i === 0) {
-                this.daliklis = this.daliklis / i;
-                this.skaitiklis = this.skaitiklis / i;
+                this.#daliklis = this.daliklis / i;
+                this.#skaitiklis = this.skaitiklis / i;
             }
+            break;
         }
     }
 
@@ -114,9 +118,8 @@ class Trupmena {
     }
 }
 
-
-const trupm1 = new Trupmena(1, 5, 6);
+const trupm1 = new Trupmena(1, 2, 3);
 const trupm2 = new Trupmena(0, 27, 32);
 
 
-console.log(trupm1.prideti(0, 27, 32));
+console.log(trupm1.pridetiTrupmena(trupm2));
