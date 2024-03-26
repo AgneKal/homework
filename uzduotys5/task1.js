@@ -56,7 +56,7 @@ class Trupmena {
     }
 
     pridetiInt(sveikasisSkaicius) {
-        return this.sveikojiDalis += sveikasisSkaicius;
+        return this.#sveikojiDalis += sveikasisSkaicius;
     }
 
     #prastinti() {
@@ -114,7 +114,7 @@ class Trupmena {
     }
 
     toDouble() {
-        return (this.sveikojiDalis * this.daliklis + this.skaitiklis) / this.daliklis;
+        return (this.#sveikojiDalis * this.#daliklis + this.#skaitiklis) / this.#daliklis;
     }
 }
 
