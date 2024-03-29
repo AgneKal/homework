@@ -33,12 +33,14 @@ petras.atspausdinti();
 
 //Pasiemame objekta
 const ivedimas = document.getElementById("ivedimoLaukas");
+console.log([ivedimas]);
 
 const mygtukas = document.createElement("button");
 
 mygtukas.textContent = "Paspausk";
 
 ivedimas.appendChild(mygtukas);
+
 /*
 ivedimas.onclick=()=>{
     console.log("Paspaude");
